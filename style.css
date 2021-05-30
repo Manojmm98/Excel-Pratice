@@ -1,0 +1,108 @@
+body{
+    margin:0;
+}
+*{
+    box-sizing: border-box;
+    /* border: 1px solid black; */
+}
+.menu_container{
+    background-color: lightgreen;
+    height:5rem;
+}
+.formula_container{
+    height:2rem;
+    background-color: white;
+}
+.grid_container{
+    height: calc( 100vh - (5rem + 2rem + 2rem) );
+}
+.sheet_container{
+    display: flex;
+    height:2.5rem;
+}
+.sheetlist_container{
+    width:97%;
+    height: 97%;
+    display: flex;
+    border: 1px solid;
+    overflow-x: auto;
+
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.sheetlist_container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .sheetlist_container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+.sheet{
+    height:100%;
+   /* we give min width for not to be overflow */
+    min-width: 5% ;
+    padding-left: 0.5rem;
+    padding-top:0.5rem ;
+    border: 1px solid;
+    background-color:whitesmoke;
+}
+.active{
+ background-color: rgb(187, 185, 185);
+}
+.icon_container{
+    width:3%;
+    border: 1px solid;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.icon{
+    font-size: 1.5rem;
+}
+
+
+
+
+/* for grid */
+.left_box{
+   height:2rem;
+   width:2rem;
+   background-color: gray;
+}
+.top_row{
+    position: absolute;
+    display: flex;
+    left: 31px;
+    top: 0px;
+}
+.cell{
+ display:flex;
+ height:2rem;
+ min-width:5rem;
+ border: 1px solid;
+ justify-content: center;
+ align-items: center;
+}
+.block{
+    width:2rem;
+    height:2rem;
+    border: 1px solid;
+    text-align: center;
+    
+}
+.row{
+    display: flex;
+}
+.left_column{
+   position:absolute; 
+
+}
+.grid_container{
+    overflow: auto;
+    position: relative;
+}
+.grid{
+    position: absolute;
+   left:31px;
+}
