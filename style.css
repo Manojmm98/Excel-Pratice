@@ -6,12 +6,29 @@ body{
     /* border: 1px solid black; */
 }
 .menu_container{
-    background-color: lightgreen;
-    height:5rem;
+    background-color: whitesmoke;
+    height:3.5rem;
+    display: flex;
+    
 }
+
 .formula_container{
-    height:2rem;
-    background-color: white;
+    height: 2.2rem;
+    display: flex;
+    justify-content: flex-start;
+    background-color:rgb(161, 236, 161);
+    align-content: center;
+    gap: 2rem;
+    padding-top: 5px;
+    padding-left: 40px   
+}
+.formula{
+    height: 80%;
+    width: 65%;
+}
+.adress{
+   height:80%;
+   width:10%;
 }
 .grid_container{
     height: calc( 100vh - (5rem + 2rem + 2rem) );
@@ -42,7 +59,6 @@ body{
     height:100%;
    /* we give min width for not to be overflow */
     min-width: 5% ;
-    padding-left: 0.5rem;
     padding-top:0.5rem ;
     border: 1px solid;
     background-color:whitesmoke;
@@ -83,6 +99,8 @@ body{
  border: 1px solid;
  justify-content: center;
  align-items: center;
+ max-width:5rem;
+ 
 }
 .block{
     width:2rem;

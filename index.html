@@ -4,15 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel clone</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="menu_container">menu</div>
+   
+
+    <div class="menu_container">
+        <div class="nos-container">
+            <i class="far fa-envelope-open open menu-icon "></i>
+            <i class="fas fa-plus-circle new menu-icon"></i>
+            <i class="fas fa-file-download download menu-icon"></i>
+        </div>
+      <select name="" id="">
+          <option value="16">16</option>
+          <option value="18">18</option>
+          <option value="20" selected>20</option>
+          <option value="22">22</option>
+          <option value="24">24</option>
+      </select>
+      <select class="font-family">
+          <option value="sans-serif">font-1</option>
+          <option value="tahoma" selected>font-2</option>
+          <option value="Georgia">font-3</option>
+          <option value="sanser">font-4</option>
+      </select>
+        <div class="formatting-container">
+            <i class="fas fa-bold menu-icon"></i>
+            <i class="fas fa-italic menu-icon"></i>
+            <i class="fas fa-underline menu-icon"></i>
+
+        </div>
+        <div class="alligment-container">
+            <i class="fas fa-align-left menu-icon " direct="left"></i>
+            <i class="fas fa-align-justify menu-icon center" direct="center"></i>
+            <i class="fas fa-align-right menu-icon right" direct="right"></i>
+        </div>
+    </div>
     <div class="formula_container">
         <input type="text" class="adress">
-        <input type="text">
+        <input type="text"class="formula">
     </div>
     <div class="grid_container">
         <div class="left_box"></div>
